@@ -9,10 +9,10 @@ ________________________________________________________________________________
 Tired of DJs and Spotify shuffle alike playing songs that don't fit the situation at all, we've resorted to generating our own tunes in a foolproof way. 
 
 ## What it does
-
+Utilizes a BNO055 accelerometer wired to an Arduino to take in orientation data on 9 axes. We scale the values of each axis, and use the scaled version to determine the intensity of each the three colors on the RGB LED. We then transmit the accelerometer values using HC-05 bluetooth modules to a second Arduino, which monitors the values and synthesizes the music. Three buttons on the second station are used to program which song is played.
 
 ## How we built it
-
+Using the BNO055, 2 Arduino Uno R3s, 2 RGB LEDs, 3 pushbuttons, 3.5mm audio jack for output, 1 breadboard
 
 ## Challenges we ran into
 Initially we were set on utilizing a synth chip to generate our own melodious-sounding notes from the calculated frequencies, but we were unable to procure one within the time and monetary constraints of the project.  Instead, we had to modify the scope of our design to focus on setting the beat and duration of pre-programmed music as opposed to programming it via motion.
